@@ -3,10 +3,15 @@ angular.module('video-player')
 .component('app', {
   // TODO
   controller: function () {
-    this.selectVideo = function() {};
     this.videos = window.exampleVideoData;
-    this.onClick = function() {
+    this.selectVideo = (index) => {
+      this.currentVideo = this.videos[index];
     };
+    this.currentVideo = this.videos[0];
+    this.searchResults = () => {
+      console.log('hi');
+    };
+    this.result = () => {};
   },
   
   
