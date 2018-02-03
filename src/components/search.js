@@ -9,7 +9,7 @@ angular.module('video-player')
   controller: function () {
     this.eventHandler = (event) => {
       if (event.code === 'Enter' || event === 'clicked') {
-        this.result();
+        this.result(this.search);
       }
     };
   },
